@@ -1,0 +1,811 @@
+/*GLOBAL SELECTOR*/
+*
+{
+  font-family: "Times New Roman" sans-serif;
+}
+
+
+/* NAV BAR */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot');
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.woff') format('woff'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.ttf') format('truetype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.svg#icomoon') format('svg');
+}
+body {
+	margin: 0;
+	background: #ecf0f1;
+	color: #fff;
+	font-family: sans-serif;
+	line-height: 1.5;
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+.main-header {
+  margin: auto;
+  width: 75%;
+  min-height: 90px;
+  padding: 1em 2em;
+  border: 2px solid #006400;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+	background: #006400;
+}
+  .main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+.main-nav,
+.drop-nav {
+  background: #228B22;
+}
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #008000;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px #008000;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+.dropdown,
+.flyout {
+  position: relative;
+}
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%;
+}
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+}
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+.flyout:hover a,
+.flyout-nav {
+  background: #228B22;
+}
+
+
+
+h3
+{
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+ol
+{
+    color: black;
+}
+
+h1
+{
+    float: left;
+    color: black;
+}
+
+.usecontainer
+{
+    float: right;
+    margin-right: 12.5%;
+    width: 37.5%;
+    margin-top: 8px;
+}
+
+/* HOME PAGE CSS */
+
+.room
+{
+    width: 1080;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #228B22;
+}
+
+/* LOGO FOR EACH WEBSITE */
+
+.websitelogo
+{
+width: 37.5%;
+height: 50%;
+float: left;
+margin-left: 12.5%;
+margin-right: auto;
+ border-top: 5px solid #228B22;
+ border-left: 5px solid #228B22;
+ border-right: 2.5px solid #228B22;
+ border-bottom: 5px solid #228B22;
+}
+
+/* INTROS FOR EACH SITE */
+
+.intro
+{
+float: right;
+width: 37.5%;
+height:50%;
+color: black;
+font-size: 20px;
+margin-right: 12.5%;
+background-color:  #D2F898;
+border-top: 5px solid #228B22;
+border-left: 2.5px solid #228B22;
+border-right: 5px solid #228B22;
+border-bottom: 5px solid #228B22;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.intro1
+{
+float: right;
+height:50%;
+color: black;
+font-size: 16px;
+width: 37.5%;
+height: 50%;
+background-color:  #D2F898;
+border-top: 5px solid #228B22;
+border-left: 2.5px solid #228B22;
+border-right: 5px solid #228B22;
+border-bottom: 5px solid #228B22;
+margin-right: 12.5%;
+text-align: center;
+}
+
+.intro3
+{
+float: right;
+width: 37.5%;
+height:50%;
+color: black;
+font-size: 17px;
+background-color:  #D2F898;
+margin-right: 12.5%;
+text-align: center;
+border-top: 5px solid #228B22;
+border-left: 2.5px solid #228B22;
+border-right: 5px solid #228B22;
+border-bottom: 5px solid #228B22;
+}
+
+.intro4
+{
+float: right;
+width: 37.5%;
+height:50%;
+color: black;
+font-size: 17px;
+background-color:  #D2F898;
+margin-right: 12.5%;
+text-align: center;
+border-top: 5px solid #228B22;
+border-left: 2.5px solid #228B22;
+border-right: 5px solid #228B22;
+border-bottom: 5px solid #228B22;
+}
+
+/* VIDEO CSS */
+
+video
+{
+border: 5px solid #228B22;
+}
+
+.register1
+{
+    width: 37.5%;
+    height: 600px;
+    float: left;
+    border: 5px solid black;
+    margin-right: auto;
+    display:block;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    color: black;
+    font-size: 21px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+/* TEACHING CONTAINERS CSS*/
+
+.teach{
+    width: 37.5%;
+    float: left;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+}
+
+.teach1{
+    width: 75%;
+    float: left;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+}
+
+.teach2{
+    width: 37.5%;
+    float: left;
+    height: 1250px;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+    font-size: 16px;
+}
+
+
+/* MESSENGER CSS*/
+
+.fbwarnings
+{
+    float: right;
+    width: 37.5%;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    background-color: greenyellow;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22;
+}
+
+
+.messengeruse
+{
+    width: 37.5%;
+    height: 1200px;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    float: left;
+    background-color: greenyellow;
+    color: black;
+    font-size: 20px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    border-right: 5px solid #228B22;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+.messengeruse1, .messsengeruse2, .messengeruse3
+{
+     width:37.5%;
+     height: 393px;
+     margin-right: 12.5%;
+     margin-top: 10px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+     float: right
+}
+
+.fbregister1
+{
+     width: 37.5%;
+     height: 600px;
+     margin-right: 12.5%;
+     margin-top: 10px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+
+/* SLACK CSS */
+
+.slackwarnings
+{
+    float: right;
+    width: 37.5%;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    background-color: greenyellow;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22;
+}
+
+.slackregister1
+{
+    width: 75%;
+    height: 560px;
+    float: left;
+    border: 5px solid black;
+    margin-right: auto;
+    display:inline-block;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    float: left;
+    color: black;
+    font-size: 21px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+    }
+
+.slackuse
+{
+    width: 50%;
+    height: 220%;
+    float: left;
+    background-color: greenyellow;
+    float: left;
+    color: black;
+    font-size: 21px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+
+    }
+
+.slackuse1, .slackuse2, .slackuse3, .slackuse4, .slackuse5
+{
+     width:100%;
+     height: 233px;
+     margin-top: 10px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+     float: right
+}
+
+
+
+/* TWITTER CSS */
+
+.twitterwarnings
+{
+    float: right;
+    width: 37.5%;
+    height: 1250px;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    color: black;
+    background-color: greenyellow;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22;
+    padding: 10px;
+}
+
+.twitterregister1
+{
+    width: 75%;
+    height: 596px;
+    float: left;
+    border: 5px solid black;
+    margin-right: auto;
+    display:inline-block;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    float: left;
+    color: black;
+    font-size: 21px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+    }
+
+
+.twitteruse
+{
+    width: 50%;
+    height: 650px;
+    float: left;
+    border: 5px solid black;
+    background-color: greenyellow;
+    float: left;
+    color: black;
+    font-size: 23px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+    float: left;
+    margin-right: 50%;
+    }
+
+.twitteruse1, .twitteruse2, .twitteruse3
+{
+     width:100%;
+     height: 210px;
+     margin-top: 5px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+     float: right;
+}
+
+/* YOUTUBE CSS */
+
+.youtubeteach
+{
+    width: 37.5%;
+    float: left;
+    height: 931px;
+    
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+}
+
+.youtubewarnings
+    {
+    width: 37.5%;
+    float: right;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    background-color: greenyellow;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+        
+}
+
+.youtuberegister1, .youtuberegister2
+{
+     width: 37%;
+     height: 320px;
+     margin-right: 12.5%;
+     margin-top: 10px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+}
+
+.youtuberegister
+{
+    width: 37.5%;
+    height: 650px;
+    margin-right: 5px;
+    display:block;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    float: left;
+    color: black;
+    font-size: 21px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    }
+
+.youtubeuse
+{
+    width: 37.5%;
+    height: 1150px;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    margin-right: 5px;
+    float: left;
+    background-color: greenyellow;
+    color: black;
+    font-size: 20px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+    }
+
+.youtubeuse1, .youtubeuse2, youtubeuse3
+{
+     width:37%;
+     height: 383px;
+     margin-right: 12.5%;
+     margin-top: 10px;
+     border-top: 5px solid #228B22;
+     border-left: 2.5px solid #228B22;
+     border-right: 5px solid #228B22;
+     border-bottom: 5px solid #228B22;
+     float: right
+}
+
+/* Whatsapp CSS */
+
+.whatsappwarnings
+    {
+    width: 37.5%;
+    height: 1070px;
+    float: right;
+    margin-right: 12.5%;
+    margin-top: 10px;
+    background-color: greenyellow;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+}
+
+.whatsappteach{
+    width: 37.5%;
+    float: left;
+    height: 1070px;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    border-left: 2.5px solid #228B22;
+    border-right: 5px solid #228B22;
+    border-top: 5px solid #228B22;
+    border-bottom: 5px solid #228B22; 
+}
+
+.whatsappuse
+{
+    width: 75%;
+    height: 800px;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: greenyellow;
+    float: left;
+    color: black;
+    font-size: 19px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    padding-right: 10px;
+    float: left;
+    display: grid;
+    }
+
+.whatsappregister2
+{
+ width: 37.5%;
+ float: right;
+ height: 400px;
+ margin-right: 12.5%;
+ margin-top: 10px;
+ border-top: 5px solid #228B22;
+ border-bottom: 5px solid #228B22;
+ border-left: 2.5px solid #228B22;
+ border-right: 5px solid #228B22;
+}
+
+.whatsappregister1
+{
+    width: 37.5%;
+    height: 400px;
+    float: left;
+    border: 5px solid black;
+    margin-right: auto;
+    display:block;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    background-color: #F6F930;
+    color: black;
+    font-size: 18px;
+    border-top: 5px solid #228B22;
+    border-left: 5px solid #228B22;
+    border-right: 2.5px solid #228B22;
+    padding-right: 5px;
+    padding-left: 5px;
+    }
+
+/* FORM CSS */
+
+fieldset
+{
+    text-align: center;
+    background-color: #228B22;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+    margin-top: 10px;
+    border: 2.5px solid #228B22;
+    font-size: 25px;
+}
+
+p3
+{
+    text-align: center;
+}
+
+legend
+{
+    color: black;
+}
+
+
+
+#layout
+{
+    display: grid;
+    grid-template-columns: 12.5% 37.5% 37.5% 12.5%;
+    grid-template-rows: 400px 10px 400px 10px 400px;
+}
+
+
+.three{
+  background-color:  #D2F898;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 2.5px solid #228B22;
+  border-right:5px solid #228B22;
+  border-top: 5px solid #228B22;
+  border-bottom: 5px solid #228B22;
+  font-size: 18px;
+}
+
+
+.two{
+   border-left: 5px solid #228B22;
+  border-right:2.5px solid #228B22;
+  border-top: 5px solid #228B22;
+  border-bottom: 5px solid #228B22;
+}
+
+.ten{
+  border-left: 5px solid #228B22;
+  border-right:2.5px solid #228B22;
+  border-top: 5px solid #228B22;
+  border-bottom: 5px solid #228B22;
+  font-size: 18px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+ background-color: #F6F930;
+}
+
+.eleven{
+  border-left: 2.5px solid #228B22;
+  border-right:5px solid #228B22;
+  border-top: 5px solid #228B22;
+  border-bottom: 5px solid #228B22;
+  color: black;
+}
+
+.eighteen{
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 5;
+grid-row-end: 7;
+background-color: greenyellow;
+color: black;
+border: 5px solid #228B22;
+padding: 5px;
+}
+
+
+/* TABLE */
+
+table{
+    width: 75%;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+}
+
+th{
+    text-align: left;
+}
+
+table, th, td{
+    border: 1px solid #228B22;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #D2F898;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: greenyellow;
+    color: black;
+}
+
+caption{
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*SITEMAP*/
+
+#content {
+    margin-left: 12.5%;
+    padding: 10px;
+}
+
+#footer {
+    width: 75%;
+    height: 60px;
+    font-family: "Arial";
+    margin-left: 12.5%;
+    bottom: 0;
+    background-color: #228B22;
+    width: 75%;
+    padding-right: 12.5%;
+    margin-top: auto;
+}
+
+.p1 {
+    float: left;
+    color: navy;
+    padding-left: 10px;
+}
+
+.p2 {
+    float: right;
+    padding-right: 10px;
+}
